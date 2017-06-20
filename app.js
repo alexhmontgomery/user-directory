@@ -13,6 +13,11 @@ app.get('/index', function (req, res) {
   res.render('index', {users: users})
 })
 
+app.get('/user-:id', function (req, res) {
+  var userID = data.users[parseInt(req.params.id) - 1]
+  res.render('user', {userID: userID})
+})
+
 app.listen(3000, function () {
   console.log('Go to host:3000')
 })

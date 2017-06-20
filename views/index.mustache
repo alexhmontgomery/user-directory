@@ -5,16 +5,16 @@
     <title>Home Page</title>
     <link href="main.css" rel="stylesheet">
   </head>
-  <body>
+  <body id="home-page">
     {{#users}}
-    <div class="users" id="user-{{id}}">
+    <a class="users" id="{{id}}" href="user-{{id}}">
       <img src="{{avatar}}" alt="avatar picture">
       <div class="users-info">
-        <h3>{{name}}</h3>
+        <h2>{{name}}</h2>
         {{#job}}<p>{{job}}, {{company}}</p>{{/job}}
-        {{^job}}<p>Available for hire</p>{{/job}}
+        {{^job}}<p><span class="available">Available for hire</span></p>{{/job}}
       </div>
-    </div>
+    </a>
     {{/users}}
   </body>
 </html>
