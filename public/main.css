@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.users {
+  flex-basis: 22%;
+  border: 1px solid grey;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.users-info {
+  text-align: left;
+  padding: 0% 4%;
+}
